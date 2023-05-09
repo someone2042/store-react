@@ -40,7 +40,7 @@ export const PROD = [
     {
         id:6,
         pname:"Chemise bleu",
-        price:"21.99",
+        price:"20.99",
         photo: pho6,
     },
     {
