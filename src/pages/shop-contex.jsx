@@ -16,7 +16,7 @@ export const ShopContextProvider = (props) => {
         for (const item in  cartitem) {
             if (cartitem[item] > 0){
                 let k=PROD.find((product) => product.id === Number(item));
-                total += cartitem[item]*k.price    
+                total += cartitem[item]*k.price;
             }
         }
     ;}
