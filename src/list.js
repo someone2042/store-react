@@ -10,7 +10,7 @@ export const PROD = [
     {
         id:1,
         pname:"Classik car",
-        price:"24 999.99",
+        price:"24 990.99",
         photo: pho1,
     },
     {
