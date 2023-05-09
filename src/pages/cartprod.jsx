@@ -15,7 +15,7 @@ export const CartProd = ( props) => {
             <div className="info">
                 <p className="name">{pname} </p>
                 <p className="price"> ${price} </p>
-                <button onClick={ () => removFormCart(id)} className=" delet ">Remove from cart </button>
+                <button onClick={ () => removFormCart(id)} className=" delet ">Remove from Cart </button>
                 <button onClick={ () => addToCart(id)} className=" add "> Add </button>
                 <h5>number you buy</h5>
                 <h3>{n>0 && <> ({n}) </>} </h3>
