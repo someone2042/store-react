@@ -82,6 +82,16 @@ img {
 
 }
 
+.Detail {
+  width: 1289px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.25);
+  border-radius: 15px;
+  height: 537px;
+}
+
 .prod {
 
   height: 436px;
@@ -94,6 +104,21 @@ img {
 
 }
 
+.Detail_img {
+  width: 465px;
+  height: 100%;
+}
+
+.Detail_info1 {
+  width: 829px;
+  padding: 40px;
+}
+
+.Detail_info {
+  width: 100%;
+  height: 70%;
+}
+
 .upper_info {
   display: flex;
   justify-content: space-between;
@@ -104,6 +129,22 @@ img {
   padding-left: 10px;
   font-size: 24px;
   margin: 0;
+}
+
+.Detail_name {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.Detail_p {
+  font-size: large;
+}
+
+.Detail_down_info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .cart_name {
@@ -184,11 +225,41 @@ img {
   background-color: #ffc42f;
 }
 
+.Detail_add:hover {
+  background-color: #222;
+  color: #fff;
+  scale: 1.1;
+  background-color: #ffc42f;
+}
+
+.Detail_add {
+  width: 200px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #FFB703;
+  transition: all .3s ease-out;
+}
+
 .cart_prod {
   width: 978px;
   height: 273px;
+  margin: 20px;
   border: solid 1px black;
   display: flex;
+}
+
+.cart_space {
+  width: 70%;
+  display: grid;
+  justify-content: center;
 }
 
 .cart_image {
@@ -238,6 +309,10 @@ img {
   transition: all .2s ease-out;
 }
 
+.cart {
+  display: flex;
+}
+
 .delet {
   width: 160px;
   height: 60px;
@@ -254,9 +329,57 @@ img {
 
 }
 
+.confirm {
+  width: 416px;
+  height: 381px;
+  display: grid;
+  justify-items: center;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+}
+
+.phone {
+  width: 100%;
+  height: 68px;
+  margin: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: large;
+  background-color: #EEEEEE;
+  border: none;
+}
+
+.order {
+  width: 254px;
+  height: 68px;
+  margin: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: x-large;
+  margin: auto;
+  background-color: #008060;
+  color: #fff;
+  border: none;
+  transition: all .1s ease-out;
+}
+
+.order:hover {
+  scale: .95;
+  cursor: pointer;
+}
+
 .delet:hover {
   background-color: #d83b1f;
   scale: .9;
+}
+
+.total {
+  color: #008060;
+  font-size: xx-large;
 }
 
 .addTO:hover {

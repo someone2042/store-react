@@ -25,7 +25,7 @@ export const ShopContextProvider = (props) => {
                 total += cartitem[item] * k.price;
             }
         }
-        return total;
+        return total.toFixed(2);
     }
 
     const removFormCart = (pid) => {
