@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
+import { shopcontext } from "../pages/shop-contex";
 
-
-export const Navbar =()=>{
-    return(
+export const Navbar = () => {
+    const { cartitem, getTotal } = useContext(shopcontext)
+    let n = 0
+    for (let i = 0; i < Object.keys(cartitem).length; i++) {
+        if (cartitem[i] > 0) {
+            n++;
+        }
+    }
+    console.log(n)
+    return (
         <div className="navbar">
-            
-            <Link to="/" >Accueil</Link>
-            <Link to="/shop" >Shop</Link>
+
+
+            <Link to="/" >Bue.com</Link>
             <Link to="/cart">
-                <ShoppingCart />
+                <ShoppingCart size={35} />
             </Link>
         </div>
     )
