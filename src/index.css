@@ -65,6 +65,16 @@ code {
 
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -78,6 +88,7 @@ img {
   width: 335px;
   display: grid;
   place-items: center;
+  color: #000;
   border-radius: 15px;
   box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.25);
 
@@ -93,6 +104,10 @@ img {
   padding-left: 10px;
   font-size: 24px;
   margin: 0;
+}
+
+.cart_name {
+  height: 65%;
 }
 
 .price {
@@ -129,6 +144,23 @@ img {
   height: 130px;
 }
 
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  background-color: #F00;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+  font-size: medium;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10000px;
+}
+
 .add {
   width: 40%;
   margin: 15px;
@@ -152,22 +184,82 @@ img {
   background-color: #ffc42f;
 }
 
+.cart_prod {
+  width: 978px;
+  height: 273px;
+  border: solid 1px black;
+  display: flex;
+}
+
+.cart_image {
+  height: 273px;
+  width: 273px;
+}
+
+.cart_info {
+  width: 696px;
+  height: 237px;
+}
+
+.more_info {
+  display: flex;
+  height: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_info {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.addTO {
+  width: 160px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #FFB703;
+  transition: all .2s ease-out;
+}
+
 .delet {
-  height: 30px;
+  width: 160px;
+  height: 60px;
   margin: 10px;
   padding-inline: 15px;
-  border-radius: 100px;
+  border-radius: 10px;
   color: #fff;
   border: none;
-  background-color: #222;
+  background-color: #D82C0D;
   cursor: pointer;
+  font-size: 25px;
 
-  transition: all .3s ease-out;
+  transition: all .2s ease-out;
 
 }
 
 .delet:hover {
-  background-color: #F00;
-  color: #fff;
-  scale: 1.2;
+  background-color: #d83b1f;
+  scale: .9;
+}
+
+.addTO:hover {
+  background-color: #fdc129;
+  scale: .9;
 }

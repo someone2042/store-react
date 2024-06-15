@@ -6,7 +6,13 @@ export const shopcontext = createContext(null);
 
 
 export const ShopContextProvider = (props) => {
-    const [cartitem, setCarItems] = useState({ 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0 });
+    const [cartitem, setCarItems] = useState(() => {
+        const items = {};
+        for (let i = 0; i < PROD.length + 1; i++) { // Adjust 10 to your desired number of items
+            items[i] = 0;
+        }
+        return items;
+    });
 
     const addToCart = (pid) => {
         setCarItems((prev) => ({ ...prev, [pid]: prev[pid] + 1 }));

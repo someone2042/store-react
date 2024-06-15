@@ -8,17 +8,22 @@ export const CartProd = (props) => {
     const n = cartitem[id];
 
     return (
-        <div className="prod">
-            <div className="img">
+        <div className="cart_prod">
+            <div className="cart_image">
                 <img src={photo} />
             </div>
-            <div className="info">
-                <p className="name">{pname} </p>
-                <p className="price"> ${price} </p>
-                <button onClick={() => removFormCart(id)} className=" delet ">Remove from Cart </button>
-                <button onClick={() => addToCart(id)} className=" add "> Add </button>
-                <h5>number you buy</h5>
-                <h3>{n > 0 && <> ({n}) </>} </h3>
+            <div className="cart_info">
+                <div className="cart_name">{pname} </div>
+                <div className="more_info">
+                    <div className="price_info">
+                        <p className="price"> ${price} </p>
+                        <h3>{n > 0 && <> ({n}) </>} </h3>
+                    </div>
+                    <div className="buttons">
+                        <button onClick={() => removFormCart(id)} className=" delet ">Remove </button>
+                        <button onClick={() => addToCart(id)} className=" addTO "> Add </button>
+                    </div>
+                </div>
             </div>
         </div>
     )

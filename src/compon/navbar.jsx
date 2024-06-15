@@ -11,7 +11,6 @@ export const Navbar = () => {
             n++;
         }
     }
-    console.log(n)
     return (
         <div className="navbar">
 
@@ -19,6 +18,9 @@ export const Navbar = () => {
             <Link to="/" >Bue.com</Link>
             <Link to="/cart">
                 <ShoppingCart size={35} />
+                {n > 0 && ( // Conditional rendering using logical AND (&&)
+                    <p className="count">{n}</p>
+                )}
             </Link>
         </div>
     )
